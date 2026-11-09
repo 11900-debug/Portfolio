@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ชื่อของคุณ | พอร์ตโฟลิโอ</title>
+<meta name="description" content="พอร์ตโฟลิโอของ ชื่อของคุณ – ผลงานและช่องทางติดต่อ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500&family=Prompt:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F6; --surface:#FFFFFF; --ink:#14213D; --muted:#56627A;
+  --line:#CBD3E1; --accent:#2B50F0; --mark:#F5E663;
+  --display:"Prompt","IBM Plex Sans Thai",system-ui,sans-serif;
+  --body:"IBM Plex Sans Thai","Sarabun",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1626;--surface:#17203A;--ink:#EAEFFA;--muted:#9AA6C0;--line:#2A3555;--accent:#7C9BFF;--mark:#5B5410}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.75 var(--body);
+  -webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+
+/* nav */
+header{padding:1.25rem 0}
+nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.logo{font:700 1.125rem var(--display);text-decoration:none}
+nav ul{display:flex;gap:1.5rem;list-style:none;padding:0}
+nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+nav ul a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:clamp(3rem,10vw,7rem) 0 clamp(3rem,8vw,5rem)}
+.hero h1{font:800 clamp(3rem,11vw,7.5rem)/1.02 var(--display);letter-spacing:-.02em}
+.hero h1 span{background:linear-gradient(var(--mark),var(--mark)) 0 88%/100% .38em no-repeat;
+  padding:0 .08em}
+.hero p{max-width:34rem;margin-top:1.75rem;font-size:1.25rem;color:var(--muted)}
+.cta{display:inline-block;margin-top:2rem;padding:.8rem 1.6rem;background:var(--accent);
+  color:#fff;font:500 1rem var(--display);border-radius:999px;text-decoration:none}
+.cta:hover{filter:brightness(1.1)}
+@media (prefers-color-scheme:dark){.cta{color:#0F1626}}
+
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 1.75rem var(--display);margin-bottom:1.5rem}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr;gap:1rem;max-width:40rem}
+
+/* projects */
+.projects{list-style:none;padding:0}
+.projects li{border-bottom:1px solid var(--line)}
+.projects a{display:grid;grid-template-columns:1fr auto;gap:.25rem 1.5rem;padding:1.4rem 0;
+  text-decoration:none}
+.projects h3{font:700 1.375rem var(--display)}
+.projects a:hover h3{color:var(--accent)}
+.projects p{grid-column:1;color:var(--muted)}
+.projects .tag{grid-column:2;grid-row:1;align-self:center;color:var(--muted);font-size:.95rem}
+@media (max-width:34rem){.projects .tag{grid-column:1;grid-row:auto}}
+
+/* skills */
+.skills{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0}
+.skills li{background:var(--surface);border:1px solid var(--line);border-radius:.5rem;
+  padding:.4rem .9rem;font-weight:500}
+
+/* contact */
+.contact p{max-width:34rem;color:var(--muted)}
+.contact ul{list-style:none;padding:0;margin-top:1.25rem;display:grid;gap:.4rem}
+.contact a{color:var(--accent);font-weight:500}
+footer{padding:2.5rem 0;color:var(--muted);font-size:.9375rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="เมนูหลัก">
+      <a class="logo" href="#top">ชื่อของคุณ</a>
+      <ul>
+        <li><a href="#about">เกี่ยวกับฉัน</a></li>
+        <li><a href="#projects">ผลงาน</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <h1>สวัสดี ฉันคือ<br><span>ชื่อของคุณ</span></h1>
+      <p>นักพัฒนาเว็บที่ชอบทำของที่ใช้งานง่ายและดูดี ตอนนี้กำลังมองหาโอกาสทำงานใหม่ๆ</p>
+      <a class="cta" href="#projects">ดูผลงาน</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>เกี่ยวกับฉัน</h2>
+      <div class="about">
+        <p>เขียนแนะนำตัวสั้นๆ ตรงนี้ เช่น เรียนอะไร ทำงานด้านไหน และสนใจอะไรเป็นพิเศษ</p>
+        <p>เพิ่มอีกย่อหน้าได้ถ้าอยากเล่าเรื่องราวหรือสิ่งที่ภูมิใจ</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>ผลงาน</h2>
+      <ul class="projects">
+        <li>
+          <a href="https://github.com/username/project-1">
+            <h3>ชื่อโปรเจกต์ที่ 1</h3>
+            <span class="tag">HTML, CSS, JavaScript</span>
+            <p>อธิบายหนึ่งประโยคว่าโปรเจกต์นี้ทำอะไร และคุณรับผิดชอบส่วนไหน</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/username/project-2">
+            <h3>ชื่อโปรเจกต์ที่ 2</h3>
+            <span class="tag">Python</span>
+            <p>อธิบายหนึ่งประโยคว่าโปรเจกต์นี้แก้ปัญหาอะไร</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/username/project-3">
+            <h3>ชื่อโปรเจกต์ที่ 3</h3>
+            <span class="tag">React</span>
+            <p>อธิบายหนึ่งประโยคว่าผลลัพธ์ที่ได้คืออะไร</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>ทักษะ</h2>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>Figma</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>ติดต่อ</h2>
+      <p>สนใจร่วมงานหรืออยากคุยเรื่องโปรเจกต์ ส่งข้อความมาได้เลย</p>
+      <ul>
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/username">github.com/username</a></li>
+        <li><a href="https://www.linkedin.com/in/username">linkedin.com/in/username</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> ชื่อของคุณ</div>
+</footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
